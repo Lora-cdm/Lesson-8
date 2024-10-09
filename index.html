@@ -4,31 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesson 7</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+        fieldset {
+            border: 2px solid #007BFF;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: #fff;
+        }
+        legend {
+            font-size: 1.5em;
+            color: #007BFF;
+        }
+        label {
+            margin-top: 10px;
+            display: block;
+        }
+        input[type="text"], input[type="radio"], input[type="checkbox"] {
+            margin: 5px 0;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <form>
         <fieldset>
             <legend>Personal Information</legend>
-            <label for="firstname">Firstname</label><br>
-            <input type="text" id="firstname" name="firstname"> <br>
-            <label for="lastname">Lastname</label><br>
-            <input type="text" id="lastname" name="lastname"> <br>
-            <label for="email">Email</label><br>
-            <input type="text" id="email" name="email"> <br>
-            <label for="password">Password</label><br>
-            <input type="text" id="password" name="password"> <br>
-            <label>Gender:</label><br>
+            <label for="firstname">Firstname</label>
+            <input type="text" id="firstname" name="firstname"> 
+            <label for="lastname">Lastname</label>
+            <input type="text" id="lastname" name="lastname"> 
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email"> 
+            <label for="password">Password</label>
+            <input type="text" id="password" name="password"> 
+            <label>Gender:</label>
             <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label><br>
+            <label for="male">Male</label>
             <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label><br>
-            <label>Hobbies</label><br>
-            <input type="checkbox" id="gaming" name="gaming" value="gaming">
-            <label for="gaming">Gaming</label><br>
-            <input type="checkbox" id="volley" name="volley" value="volley">
-            <label for="gaming">Volleyball</label><br>
-            <input type="checkbox" id="cook" name="cook" value="cook">
-            <label for="gaming">Cooking</label><br>
+            <label for="female">Female</label>
+            <label>Hobbies</label>
+            <input type="checkbox" id="gaming" name="hobbies" value="gaming">
+            <label for="gaming">Gaming</label>
+            <input type="checkbox" id="volley" name="hobbies" value="volleyball">
+            <label for="volley">Volleyball</label>
+            <input type="checkbox" id="cook" name="hobbies" value="cooking">
+            <label for="cook">Cooking</label>
+            <label for="pets">Choose a pet</label>
+            <select id="pets" name="pet">
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="bird">bird</option>
+            </select>
+            <button type="button" id="addHobbyButton">Add Another Hobby</button>
         </fieldset>
     </form>
 </body>
